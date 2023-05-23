@@ -15,6 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-###안녕하세요!🙋‍♀
+### 안녕하세요!🙋‍♀
 저는 임연우 입니다. 웹🕸디자인과 컴퓨터과학💻을 공부했으며 웹 기획자👩‍💼로 일했었고 현재는 프론트엔드 웹 개발자👩‍💻를 꿈꿉니다. 저는 웹으로 유저🫵에게 마법☄을 걸고 싶습니다. 🧙‍♀️
-제가 만든 저를 소개하는 웹사이트입니다! ##📌https://yxxxwoo.github.io/yxxxwoo/
+제가 만든 저를 소개하는 웹사이트입니다! 
+### 📌https://yxxxwoo.github.io/yxxxwoo/
