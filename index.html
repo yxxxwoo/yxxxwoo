@@ -15,15 +15,57 @@
     
     <!--자바스크립트-->
     <script src="index.js"></script>
+    <script src="miffy.js"></script>
 
+    <!--three.js-->
+    <!--<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@<version>/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@<version>/examples/jsm/"
+          }
+        }
+      </script>-->
 </head>
 <body>
     <div>
         <p>안녕하세요!🙋‍♀️
             저는 임연우 입니다. 웹🕸디자인과 컴퓨터과학💻을 공부했으며 웹 기획자👩‍💼로 일했었고 현재는 프론트엔드 웹 개발자👩‍💻를 꿈꿉니다. 저는 웹으로 유저🫵에게 마법☄을 걸고 싶습니다. 🧙‍♀️</p>
-
-            <p>으으으으악</p>
-            <p>깃 레파지토리 이름바꾸는거 성공했니? 제발</p>
     </div>
+
+    <!--3d미피-->
+    <canvas id="canvas" width="300" height="300"></canvas>
+
+    <script type="importmap">
+    {
+        "imports": {
+          "three": "https://unpkg.com/three@0.141.0/build/three.module.js",
+          "GLTFLoader" : "https://unpkg.com/three@0.141.0/examples/jsm/loaders/GLTFLoader.js"
+        }
+      }
+    </script>
+
+    <script type="module">
+        import {GLTFLoader} from 'GLTFLoader';
+        import * as THREE from 'three';
+
+        let scene = new THREE.Scene();
+        let renderer = new THREE.WebGLRenderer(
+            { canvas : document.querySelector('#canvas')} //
+        );
+
+        let camera = new THREE.PerspectiveCamera(30, 1);
+        camera.position.set(0,0,0)
+
+        let loader = new GLTFLoader();
+        loader.load('Assets/miffy1.gltf', function(gltf){
+            scene.add(gltf.scene);
+            renderer.render(scene, camera);
+        });
+
+        renderer.render(scene);
+
+    </script>
 </body>
 </html>
