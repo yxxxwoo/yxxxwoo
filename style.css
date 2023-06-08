@@ -1,3 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
 
+body {
+    background-color: #3C3C3C;
+    position: relative;
+}
 
+.self-intro {
+position: absolute;
+width: 715px;
+height: 170px;
+left: 485px;
+top: 216px;
+
+font-family: 'Noto Sans CJK KR';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+
+color: #FFFFFF;
+}
+
+.self-intro-link {
+    position: absolute;
+    width: 94px;
+    height: 42px;
+    left: 492px;
+    top: 392px;
+    
+}
+
+#portfolio {
+    position: absolute;
+width: 187px;
+height: 43px;
+left: 486px;
+top: 615px;
+
+font-family: 'Noto Sans CJK KR';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 43px;
+/* identical to box height, or 134% */
+
+
+color: #FFFFFF;
+}
+.portfolio {
+    position: absolute;
+    width: 910px;
+    height: 890px;
+    left: 503px;
+    top: 747px;
+}
+
+.recode {
+    position: absolute;
+    width: 882px;
+    height: 802px;
+    left: 531px;
+    top: 1927px;
+    }
+
+.recode-l {
+    position: absolute;
+    width: 31px;
+    height: 790px;
+    left: 481px;
+    top: 1933px;}
+
+#recode {
+    position: absolute;
+height: 43px;
+left: 486px;
+top: 1782px;
+color: #FFFFFF;
+font-size: 32px;
+line-height: 43px;
+font-style: normal;
+font-weight: 700;
+}
+
+footer {
+    height:50px;
+    position : relative;
+    bottom : 0;
+}
